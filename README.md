@@ -1,6 +1,5 @@
-MEDICAL_ANALISIS_ING
-ES una API que puede ser aplicada a cualquier centro medico su funcionalidad inicial es registrar la entrada de los pacientes y sus datos , 
-permite gestionar actualizaciones CRUD ,Calcula la edad media...
+# HOSPITAL_ING
+Es una API que puede ser utilizada en cualquier centro medico, usa database.sqlite, utiliza autenticaciones JWT Bearer(Http,Bearer), Login_Genere_Token para dar inicio de sesion exitoso, Utiliza el metodo CRUD => GET : get pacientes totales- get pacientes by id - get pacientes by name - get pacientes ingresados - get probabilidad dolor_de_cabeza - get probabilidad diagnostico - get edad_media - get edad maxima . POST : create pacientes. PUT : update Paciente. DELETE : delete paciente. 
 
-# este proyecto esta en desarrollo
+Proyecto esta en desarrollo
 # si deseas contactarme ne.marpo2408@gmail.com
