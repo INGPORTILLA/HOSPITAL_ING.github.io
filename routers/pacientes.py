@@ -64,7 +64,7 @@ def get_edad_maxima() -> int:
 # creamos la ruta para calcular el total de pacientes atendidos en el hospital
 
 @paciente_router.get('/Hospital/total-pacientes', tags=['pacientes'], response_model=int)
-def get_pacientes_Totales() -> int:
+def get_pacientes_ingresados() -> int:
         db = Session()
         total_pacientes = db.query(func.count(PacienteModel.id)).scalar()
         return JSONResponse(status_code=200, content=total_pacientes)
