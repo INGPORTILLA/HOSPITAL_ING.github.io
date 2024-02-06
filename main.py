@@ -22,31 +22,7 @@ app.include_router(user_router)
 #creamos la tabla para la base de datos
 Base.metadata.create_all(engine)
 
-        
-# modelo para la informacion del paciente
-
-pacientes = [
-    {
-
-         "id": 12754050,
-         "name":"portilla",
-         "age": 40,
-         "sex": "masculino",
-         "symptom": "dolor de cabeza"
-                                  
-    },
-    {
-         "id": 1081277285,
-         "name":"danna",
-         "age": 16,
-         "sex": "femenino",
-         "symptom": "dolor de garganta"
-    }
-]
-
 # definimos ruta name de la app
-
-# definimos endpoints titulo
 @app.get('/', tags=['INICIO'])
 def name_app():
     return HTMLResponse('<h1>MEDICAL_ANALISIS_ING</h1>')
